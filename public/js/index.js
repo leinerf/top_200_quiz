@@ -14,12 +14,16 @@ async function getData() {
 }
 
 function updateQuestion(data) {
-    var question = document.querySelector("#question");
-    var choices = document.querySelectorAll(".quiz-option");
-    var correctChoice;
+    let drugQuestion = document.querySelector("#drug");
+    let choices = document.querySelectorAll(".quiz-option");
+    choices.forEach((choice) => {
+        choice.classList.remove("disable");
+    })
+    let correctChoice;
 
-    question.textContent = "Guess the Brand or Generic for " + data.drug;
 
+    drugQuestion.textContent = data.drug;
+    document.querySelector("#correct-answer").textContent = "The correct answer is " + data.alternative;
     for (var i = 0; i < choices.length; i++) {
         var choice = choices[i];
         choice.textContent = data.choices[i];
@@ -27,17 +31,18 @@ function updateQuestion(data) {
             correctChoice = choice;
         }
         choice.addEventListener("click", (event) => {
-            if (!allowClicks) {
-                return;
-            }
-            allowClicks = false;
-            if (event.target.textContent != data.alternative) {
-                event.target.setAttribute('id', "wrong");
-            } else {
+            console.log("i can click")
+            document.querySelector("#correct-answer").classList.remove("hide");
+            if (event.target.textContent === data.alternative) {
                 score++;
             }
-            correctChoice.setAttribute('id', "correct");
             updateScore();
+
+            choices.forEach((choice) => {
+                choice.classList.add("disable");
+            })
+
+
         })
     }
 
@@ -50,25 +55,17 @@ function updateScore() {
 
 let questionIndex;
 let score;
-let allowClicks;
 
 async function startGame() {
     questionIndex = 0;
     score = 0;
-    allowClicks = true;
 
     const result = await getData();
     document.querySelector("#total-drugs").textContent = result.length;
     document.querySelector('#next-button').addEventListener("click", () => {
         const data = getNextDrug(result);
+        document.querySelector("#correct-answer").classList.add("hide");
         updateQuestion(data);
-        allowClicks = true;
-
-        const wrong = document.querySelector("#wrong");
-        if (wrong) {
-            wrong.removeAttribute("id")
-        }
-        document.querySelector("#correct").removeAttribute("id")
     })
     const data = getNextDrug(result);
     updateQuestion(data);

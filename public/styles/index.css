@@ -19,3 +19,22 @@ body {
 #wrong {
     background-color: #FFB7CE;
 }
+
+#drug {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+#alternative {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+.disable {
+    pointer-events: none;
+    cursor: default;
+}
