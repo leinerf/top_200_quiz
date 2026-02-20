@@ -14,34 +14,31 @@ async function getData() {
 }
 
 function updateQuestion(data) {
-    let drugQuestion = document.querySelector("#drug");
     let choices = document.querySelectorAll(".quiz-option");
     choices.forEach((choice) => {
         choice.classList.remove("disable");
+        choice.removeAttribute("id");
     })
-    let correctChoice;
-
-
-    drugQuestion.textContent = data.drug;
+    document.querySelector("#drug").textContent = data.drug;
+    document.querySelector("#drug-type").textContent = data.type
     document.querySelector("#correct-answer").textContent = "The correct answer is " + data.alternative;
     for (var i = 0; i < choices.length; i++) {
         var choice = choices[i];
         choice.textContent = data.choices[i];
-        if (data.choices[i] === data.alternative) {
-            correctChoice = choice;
-        }
         choice.addEventListener("click", (event) => {
-            console.log("i can click")
             document.querySelector("#correct-answer").classList.remove("hide");
-            if (event.target.textContent === data.alternative) {
+            if (event.target.textContent != data.alternative) {
+
+            } else {
                 score++;
             }
             updateScore();
-
             choices.forEach((choice) => {
+                if (choice.textContent === data.alternative) {
+
+                }
                 choice.classList.add("disable");
             })
-
 
         })
     }
@@ -63,6 +60,12 @@ async function startGame() {
     const result = await getData();
     document.querySelector("#total-drugs").textContent = result.length;
     document.querySelector('#next-button').addEventListener("click", () => {
+        if (questionIndex >= result.length) {
+            document.querySelector(".quiz-header p").textContent = "You finished all of the questions!!!";
+            document.querySelector("#quiz").classList.add("disable");
+            return;
+
+        }
         const data = getNextDrug(result);
         document.querySelector("#correct-answer").classList.add("hide");
         updateQuestion(data);
@@ -82,13 +85,16 @@ function getNextDrug(result) {
         return {
             drug: result[index].brand,
             alternative: result[index].generic,
-            choices: result[index].generic_choices
+            choices: result[index].generic_choices,
+            type: "generic",
+            total: result.length
         }
     } else {
         return {
             drug: result[index].generic,
             alternative: result[index].brand,
-            choices: result[index].brand_choices
+            choices: result[index].brand_choices,
+            type: "brand"
         }
     }
 }

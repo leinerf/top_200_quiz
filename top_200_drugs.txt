@@ -61,7 +61,7 @@ Ditropan;Oxybutynin;Antispasmotic;Overactive bladder
 Dramamine;Meclizine hydrochloride;H1 antagonist;Motion sickness
 Effexor;Venlafaxine hydrochloride;SNRI;Depression
 Elavil;amitriptyline;TCA;Depression
-Esidrix;hyydrochlorothiazide;SNRI;Depression
+Esidrix;hydrochlorothiazide;SNRI;Depression
 Flexeril;Cyclobenzaprine hydrochloride;Muscle relaxant;Skeletal muscle relaxant
 Flomax;Tamsulosin hydrochloride;Alpha-blocker;BPH
 Flonase;fluticasone;Corticosteroid;Allergic rhinitis
