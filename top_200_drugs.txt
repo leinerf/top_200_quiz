@@ -1,0 +1,200 @@
+Brand Name;"Generic Name ";Drug Classification;Indication or Use
+Abilify;Aripiprazole;Antipsychotic;Schizophrenia
+Accupril;Quinapril;ACE inhibitor;Hypertension
+Actos;Pioglitazone hydrochloride;Thiazolidinedione;Type 2 diabetes mellitus
+Adderall XR;Amphetamine/dextroamphetamine;CNS stimulant;ADHD
+Adipex;Phentermine;CNS stimulant;Obesity
+Advair Diskus;Fluticasone propionate/salmeterol xinafoate;Beta-2 agonist/corticosteroid;Asthma, COPD
+Aldactone;Spironolactone;Potassium-sparing diuretic;Hypertension, edema, hypokalemia
+Alphagan P;Brimonidine tartrate;Alpha-agonist;Glaucoma
+Altace;Ramipril;ACE inhibitor;Hypertension
+Amaryl;Glimepiride;Sulfonylurea;Type 2 diabetes mellitus
+Ambien;Zolpidem tartrate;Gamma-aminobutyric acid agonist;Insomnia
+Amoxil;Amoxicillin;Penicillin antibiotic;Bacterial infection
+Androgel;Testosterone topical;Androgen;Hypogonadism
+Apresoline;Hydralazine hydrochloride;Vasodilator;Hypertension
+Aricept;Donepezil hydrochloride;Acetylcholinesterase inhibitor;Alzheimer’s disease
+Arimidex;Anastrozole;Hormonal oncologic;Cancer
+Armour Thyroid;thyroid;Thyroid hormone;Hypothyroidism
+Asacol;mesalamine;Inflammatory bowel disease;Ulcerative colitis
+Asmanex Twisthaler;momestasone;Corticosteroid;Asthma
+Aspir-Low, Ecotrin;Aspirin;NSAID;Analgesic, stroke prevention
+Ativan;lorazepam;Benzodiazepine;Anxiety
+Atrovent;Ipratropium;Anticholinergic;COPD
+Augmentin;Amoxicillin/clavulanate potassium;Penicillin/beta-lactamase combination antibiotic;Bacterial infection
+Bactrim or Septra;Sulfamethoxazole/trimethoprim;Sulfa antibiotic;Bacterial infection
+Beconase AQ;beclomethasone;Corticosteroid;Allergic rhinitis
+Benadryl;Diphenhydramine hydrochloride;H1 antagonist;Allergies
+Benicar;Olmesartan medoxomil;ARB;Hypertension
+Buspar;Buspirone hydrochloride;%-HT1a receptor partial antagonist;Anxiety
+Bystolic;Nebivolol hydrochloride;Beta-blocker;Hypertension
+Calan;Verapamil hydrochloride;Nondihydrophyridine CCB;Hypertension
+Calcium;Calcium;Vitamin;Calcium deficiency
+Cardizem;Diltiazem hydrochloride;Nondihydrophyridine CCB;Hypertension
+Cardura;Doxazosin mesylate;Alpha-1 blocker;Hypertension
+Catapres-TTS;clonidine;Alpha-agonist;Hypertension
+Celebrex;Celecoxib;NSAID, COX-2 inhibitor;Inflammation
+Celexa;Citalopram;SSRI;Depression
+Cheratussin AC;Guaifenesin/codeine;Antitussive/expectorant combination;Cough suppressant and expectorant
+Cipro;Ciprofloxacin;Quinolone antibiotic;Bacterial infection
+Clartin;loratadine;H1 antagonist;Allergies
+Cleocin;clindamycin;Lincosamide antibiotic;Bacterial infection
+ClinPro;Sodium fluoride;Supplement;Cavity prevention
+Clobex;Clobetasol propionate;Corticosteroid;Dermatoses
+Cogentin;Benztropine mesylate;Anti-Parkinson;Parkinson’s Disease
+Combivent;Albuterol/ipratropium;Anticholinergic/beta-2 agonist;Asthma
+Concerta;methylphenidate;Central nervous system stimulant;ADHD
+Coreg;carvedilol;Beta-blocker;Hypertension
+Cortef;hydrocortisone;Corticosteroid;Inflammatory disorders
+Coumadin;Warfarin;Vitamin K antagonist;Anticoagulation
+Cozaar;Losartan potassium;ARB;Hypertension
+Crestor;Rosuvastatin calcium;HMG-CoA reductase inhibitor;Hyperlipidemia
+Cymbalta;Duloxetine;SNRI;Depression
+Deltasone;prednisone;Corticosteroid;Inflammation
+Depakote ER;Divalproex sodium;Neurologic;Bipolar disorder, migraine headache, seizure disorder
+Desyrel;Trazodone hydrochloride;Serotonin reuptake inhibitor;Insomnia, depression
+Diflucan;Fluconazole;Antifungal;Fungal infection
+Dilantin;phenytoin;Hdantoin;Status epilepticus
+Diovan;valsartan;ARB;Hypertension
+Diovan HCT;Hydrochlorothiazide/valsartan;ARB/thiazide combination;Hypertension
+Ditropan;Oxybutynin;Antispasmotic;Overactive bladder
+Dramamine;Meclizine hydrochloride;H1 antagonist;Motion sickness
+Effexor;Venlafaxine hydrochloride;SNRI;Depression
+Elavil;amitriptyline;TCA;Depression
+Esidrix;hyydrochlorothiazide;SNRI;Depression
+Flexeril;Cyclobenzaprine hydrochloride;Muscle relaxant;Skeletal muscle relaxant
+Flomax;Tamsulosin hydrochloride;Alpha-blocker;BPH
+Flonase;fluticasone;Corticosteroid;Allergic rhinitis
+Focalin XR;Dexmethylphenidate hydrochloride;CNS stimulant;ADHD
+Folic Acid;folic acid;Vitamin;Dietary supplement
+Fosamax;Alendronate;Bisphhosphonate;Osteoporosis
+Gianvi;Drospirenone/ethinyl estradiol;Monophasic oral contraceptive;Oral contraceptive
+Glucophage;Metformin hydrochloride;Biguanide;Type 2 diabetes mellitus
+Glucotrol;glipizide;Sulfonylurea;Type 2 diabetes mellitus
+Humalog;Insulin lispro;Insulin;Diabetes mellitus
+Humbling N;Insulin NPH;Insulin;Diabetes mellitus
+Hytrin;terazosin;Alpha-1 blocker;BPH
+Hyzaar;Hydrochlorothiazide/losartan potassium;ARB/thiazide combination;Hypertension
+imdur;Isosorbide mononitrate;Vasodilator;Angina
+Imitrex;sumatriptan;Serotonin 5-HT1 receptor agonist;Migraine headache
+Inderal;Propranolol hydrochloride;Beta-blocker;Hypertension
+Inderide;Hydrochlorothiazide/propranolol hydrochloride;Beta-blocker/diuretic combination;Hypertension
+Iron;Ferrous sulfate;Supplement;Iron-deficiency anemia
+Janumet;Metformin hydrochloride/sitagliptin phosphate;Biguanide/DPP-4 inhibitor;Type 2 diabetes mellitus
+Januvia;"Sitagliptin phosphate ";DPP-4 inhibitor;Type 2 diabetes mellitus
+Jolessa;Ethynyl estradiol/levonorgestrel;Monophasic oral contraceptive;Oral Contraceptive
+K-Dur, Klor-COn, Klor-Con M, Micro K;Potassium chloride;Electrolyte;Potassium supplement
+Kariva;Desogestrel/ethinyl estradiol;Monophasic oral contraceptive;Oral contraceptive
+Keflex;cephalexin;Cephalosporin antibiotic;Bacterial infection
+Keppra;Levetiracetam;Antiepileptic;Seizure
+Klonopin;clonazepam;Benzodiazepine;Seizure
+Lamictal;lamotrigine;Antiepileptic;Bipolar disorder
+Lanoxin;digoxin;Cardiac glycoside;Arrhythmia, myocardial infarction
+Lantus;Insulin glargine;Insulin;Diabetes mellitus
+Lasix;furosemide;Loop diuretic;Hypertension
+Levaquin;Levofloxacin;Quinolone antibiotic;Bacterial infection
+Levemir;Insulin detemir;Insulin;Diabetes mellitus
+Lexapro;Escitalopram oxalate;SSRI;Depression
+Lioresal;baclofen;Muscle relaxant;Spasticity
+Lipitor;atorvastatin;HMG-CoA reductase inhibitor;Hyperlipidemia
+Lithobid;lithium;Antimanic;Bipolar disorder
+Loestrin Fe-24;Ethinyl estradiol/norethindrone, iron;Monophasic oral contraceptive;Oral contraceptive
+Lopid;gemfibrozil;Antilipemic agent;Hyperlipidemia
+Loperessor;Metoprolol tartrate;Beta-blocker;Hypertension
+Loratadine;Cetirizine hydrochloride;H1 antagonist;Allergies
+lotensin;Benazepril hydrochloride;ACE inhibitor;Hypertension
+Lotrel;Amlodipine besylate/benazepril hydrochloride;ACE inhibitor/CCB combination;Hypertension
+Lovaza;Omega-3-acid ethyl esters;Esterified fish oils;Hypertriglyceridemia
+Lyrica;pregabalin;GABA analogue;Neuropathic pain
+Maxzide or Dayside;Hydrochlorothiazide/triamterene;Potassium-sparing/thiazide diuretic;Hypertension
+Medrol;methylprednisolone;Corticosteroid;inflammation
+Mevacor;lovastatin;HMG-CoA reductase inhibitorreductase inhibitor;Hyperlipidemia
+Microns or DiaBeta;glyburide;Sulfonylurea;Type 2 diabetes mellitus
+Mobic;meloxicam;NSAID;Osteoarthritis
+Mortin;ibuprofen;NSAID;Inflammation
+MS Contin;morphine;Opioid analgesic;Analgesic
+Namenda;Meantime hydrochloride;NMDA receptor agonist;Alzheimer’s disease
+Naprosyn;naproxen;NSAID;Inflammation
+Nasacort AQ;triamcinolone;Corticosteroid;Allergic rhinitis
+Neurontin;gabapentin;Neurologic;Seizure
+Nexium;esomeprazole;PPI;GERD
+Nitrostat;nitroglycerin;Vasodilator;Angina
+Norvasc;Amlodipine besylate;CCB;Hypertension
+Novolog;Insulin aspart;Insulin;Diabetes mellitus
+Nyamyc;nystatin;Antifungal;Fungal infection
+Oraped;prednisolone;Corticosteroid;Inflammatory disorders
+Ortho-Tri-Cyclen Lo;Ethinyl estradiol/norgestimate;Triphasic oral contraceptive;Oral contraceptive
+Oxycontin;oxycodone;Opioid;Analgesic
+Pacerone;Amiodarone hydrochloride;Antiarrhythmic;Antiarrhythmic
+Pamelor;Nortriptyline hydrochloride;TCA;Depression
+Paxil;paroxetine;SSRI;Depression
+Veetids;Penicillin VK;Penicillin antibiotic;Bacterial infection
+Pepcid;Famotidine;H2 blocker;GERD
+Phenergan;Promethazine hydrochloride;Antihistamine;Antiemetic
+Plaquenil;Hydroxychloroquine sulfate;Aminoquinoline;Antimalarial
+Plavix;Clopidogrel bisulfate;Antiplatelet;Thrombotic event prevention
+Pradaxa;Dabigatran etexilate mesylate;"Anticoagulant; DOAC";Thrombotic event prevention
+Pravachol;Pravastatin;HMG-CoA reductase inhibitor;Hyperlipidemia
+Premarin;Estrogens conjugated;Estrogen;Vasomotor symptoms
+Prevacid;lansoprazole;PPI;GERD
+Prilosec;omeprazole;PPI;GERD
+Pristiq;desvenlafaxine;SNRI;Depresssion
+ProAir HFA, Proventil HFA, Ventolin HFA;albuterol;Bronchodilator;Asthma
+Procardia;Nifedipine;Dihydropyridine CCB;Hypertension
+Proscar;finasteride;5 Alpha-reductase inhibitor;BPH
+Protonix;Pantoprazole sodium;PPI;GERD
+Prozac;Fluoxetine hydrochloride;SSRI;Depression
+Pulmicort Respules;budesonide;Corticosteroid;Asthma
+Remeron;mirtazapine;Antidepressant;Depression
+Requip;Ropinirole hydrochloride;Dopamine agonist;Parkinson’s Disease
+Restoril;temazepam;Benzodiazepine;Insomnia
+Risperdal;risperidone;Antipsychotic;Schizophrenia
+Robaxin;methocarbamol;Skeletal muscle relaxant;Spasticity
+Seroquel;Quetiapine fumarate;Antipsychotic;Schizophrenia
+Singulair;montelukast;Leukotriene receptor antagonist;Asthma
+Slow-Mag;magnesium;Supplement;Magnesium deficiency
+Soma;carisoprodol;Muscle relaxant;Skeletal muscle relaxant
+Spiriva Handihaler;Tiotropium;Antichholinergic;COPD
+Stool softener;docusate;Laxative;Constipation
+Symbicort;Budesonide/formoterol;Corticosteroid/beta-2 agonist;Asthma
+Synthroid;Levothyroxine sodium;Thyroid hormonehormone;Hypothroidism
+Tenoretic;Atenolol/chlorthalidone;Beta-blocker/thiazide combination;Hypertension
+Tenormin;Atenolol;Beta-blocker;Hypertension
+Tessalon Perles benzonatate;Benzonatate;Antitussive;Cough
+Thalitone;chlorthalidone;Thiazide diuretic;Hypertension
+Topamax;topiramate;Antiepileptic;Seizures
+Travatan;travoprost;Prostaglandin analogue;Glaucoma
+Tricor;Fenofibrate;Fibrate;Hyperlipidemia
+Trileptal;oxcarbazepine;Antiepileptic;Partial seizures
+Tylenol;Acetaminophen;Nonopioid analgesic;Analgesic
+Ultram;Tramadol hydrochloride;Opioid;Analgesic
+Vagifem;estradiol;Estrogen;Vulvovaginal atrophy
+Valium;diazepam;Benzodiazepine;Anxiety
+Valtrex;valacyclovir;Antiviral;Viral infection
+Vasotec;Enalapril maleate;ACE inhibitor;Hypertension
+Vibramycin;Doxycycline hyclate;Tetracycline antibiotic;Bacterial infection
+Vicodin;Acetaminophen/hydrocodone bitartrate;Opioid combination;Analgesic
+Victoza;liraglutide;GLP-1 receptor agonist;Type 2 diabetes mellitus
+Vistaril;Hydroxyzine;H1 antagonist;Allergies
+Vitamin B12;cyanocobalamin;Vitamin;Vitamin B12 deficiency
+Vitamin D 50,0000;Ergocalciferol;Vitamin;Vitamin D deficiency
+Vitamin D3;Cholecalciferol/alpha-tocopherol;Vitamin;Vitamin D deficiency
+Voltaren;diclofenac;NSAID;Analgesic
+Vytorin;Ezetimibe/simvastatin;HMG-CoA reductase combination;Hypercholesterolemia
+Vyvanse;lisdexamfetamine;CNS stimulant;ADHD
+Wellbutrin XL;Bupropion;Antidepressant;Depression
+Xalatan;latanoprost;Prostaglandin analogue;Glaucoma
+Xanax;Alprazolam;Benzodiazepine;Anxiety
+Xarelto;rivaroxaban;DOAC;Anticoagulant
+Xyzal;Levocetirizine dihydrochloride;H1 antagonist;Allergies
+Zanaflex;Tizanidine;Alpha-2 agonist;Muscle relaxant
+Zantac;ranitidine;H2 blocker;GERD
+Zestoretic;Hydrochlorothiazide/lisinopril;ACE inhibitor/thiazide combination;Hypertension
+Zestril or Prinivil;lisinopril;ACE inhibitor;Hypertension
+Zetia;ezetimibe;Cholesterol absorption inhibitor;Hyperlipidemia
+Zithromax;azithromycin;Macrolide antibiotic;Bacterial infection
+Zocor;simvastatin;HMG-CoA reductase inhibitor;Hyperlipidemia
+Zofran;Ondansetron;5-hT3 receptor antagonist;Antiemetic
+Zoloft;Sertraline hydrochloride;SSRI;Depression
+Zovirax;acyclovir;Antiviral;Viral infection
+Zyloprim;Allopurinol;Xanthine oxidase inhibitor;Gout
