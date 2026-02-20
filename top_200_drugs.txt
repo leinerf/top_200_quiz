@@ -72,7 +72,7 @@ Gianvi;Drospirenone/ethinyl estradiol;Monophasic oral contraceptive;Oral contrac
 Glucophage;Metformin hydrochloride;Biguanide;Type 2 diabetes mellitus
 Glucotrol;glipizide;Sulfonylurea;Type 2 diabetes mellitus
 Humalog;Insulin lispro;Insulin;Diabetes mellitus
-Humbling N;Insulin NPH;Insulin;Diabetes mellitus
+Humulin N;Insulin NPH;Insulin;Diabetes mellitus
 Hytrin;terazosin;Alpha-1 blocker;BPH
 Hyzaar;Hydrochlorothiazide/losartan potassium;ARB/thiazide combination;Hypertension
 imdur;Isosorbide mononitrate;Vasodilator;Angina
