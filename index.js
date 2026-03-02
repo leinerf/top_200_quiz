@@ -1,5 +1,4 @@
 import express from "express";
-import bodyParser from "body-parser";
 import cors from "cors";
 import { createGenericDrugQuestions } from "./modules/drugs.js";
 import { fileURLToPath } from "url";
@@ -11,11 +10,10 @@ const _dirname = dirname(fileURLToPath(
 const app = express();
 
 app.use(express.static("public"))
-app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors());
 
 app.get("/drugs", (req, res) => {
-    res.json(createGenericDrugQuestions(0, 100))
+    res.json(createGenericDrugQuestions(100, 25))
 })
 
 app.get("/", (req, res) => {

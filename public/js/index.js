@@ -1,5 +1,5 @@
 async function getData() {
-    const url = "https://top-200-quiz.onrender.com/drugs";
+    const url = "http://localhost:3000/drugs";
     try {
         const response = await fetch(url);
         if (!response.ok) {

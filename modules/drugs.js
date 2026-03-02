@@ -1,18 +1,58 @@
 import { readFileSync } from "fs";
 import ps from "prompt-sync";
 
-const file = readFileSync('top_200_drugs.txt', "utf-8");
-const lines = file.split("\n");
-const drugs = []
 
-for (let i = 1; i < lines.length; i++) {
-    const line = lines[i].split(";");
-    drugs.push({
-        "brand": line[0],
-        "generic": line[1],
-        "classification": line[2],
-        "indication": line[3]
-    });
+class Drugs {
+    drugs = [];
+    constructor() {
+        const file = readFileSync('top_200_drugs.txt', "utf-8");
+        const lines = file.split("\n");
+        for (let i = 1; i < lines.length; i++) {
+            const line = lines[i].split(";");
+            this.drugs.push({
+                "brand": line[0],
+                "generic": line[1],
+                "classification": line[2],
+                "indication": line[3]
+            });
+        }
+    }
+    quizBrands(offset, limit) {
+        return this._quiz(offset, limit, "brand", "generic")
+    }
+    quizClassifications(offset, limit, drug) {
+
+    }
+
+    quizGenerics(offset, limit) {
+        return this._quiz(offset, limit, "generic", "brand");
+    }
+    _quiz(offset, limit, drug, attribute) {
+        const result = [];
+        const drugs = this.drugs.slice(offset, offset + limit);
+        const attributesSet = new Set(drugs.map((drug) => { return drug[attribute] }));
+        const attributes = [...attributesSet];
+
+        for (let i = 0; i < drugs.length; i++) {
+            const item = {}
+            item.drug = this.drugs[i][drug];
+            item.attribute = this.drugs[i][attribute]
+            item.randomAttributes = new Set([item.attribute]);
+            while (item.randomAttributes.size < 4) {
+                const randIndex = Math.floor(Math.random() * attributes.length);
+                item.randomAttributes.add(attributes[randIndex])
+            }
+            item.randomAttributes = [...item.randomAttributes];
+            shuffle(item.randomAttributes);
+            result.push(item);
+        }
+        shuffle(result);
+        return result
+    }
+}
+
+function drugs() {
+    return new Drugs();
 }
 
 function createGenericDrugQuestions(offset, limit) {
@@ -41,6 +81,7 @@ function createGenericDrugQuestions(offset, limit) {
             "generic_choices": genericChoices
         })
     }
+    console.log(result.length)
     shuffle(result);
     return result;
 }
@@ -99,6 +140,4 @@ function drugQuiz(offset, limit) {
     }
 }
 
-// drugQuiz(0, 100);
-
-export { createGenericDrugQuestions }
+export default drugs;

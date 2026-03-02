@@ -4,13 +4,13 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node index.js"
+        "start": "node index.js",
+        "dev": "nodemon --env-file=.env index.js"
     },
     "author": "",
     "license": "ISC",
     "description": "",
     "dependencies": {
-        "body-parser": "^2.2.2",
         "cors": "^2.8.6",
         "express": "^5.2.1",
         "prompt-sync": "^4.2.0"
