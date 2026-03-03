@@ -5,6 +5,7 @@ Actos;Pioglitazone hydrochloride;Thiazolidinedione;Type 2 diabetes mellitus
 Adderall XR;Amphetamine/dextroamphetamine;CNS stimulant;ADHD
 Adipex;Phentermine;CNS stimulant;Obesity
 Advair Diskus;Fluticasone propionate/salmeterol xinafoate;Beta-2 agonist/corticosteroid;Asthma, COPD
+Sodium Chloride;Sodium chloride;Electrolyte;Supplement
 Aldactone;Spironolactone;Potassium-sparing diuretic;Hypertension, edema, hypokalemia
 Alphagan P;Brimonidine tartrate;Alpha-agonist;Glaucoma
 Altace;Ramipril;ACE inhibitor;Hypertension

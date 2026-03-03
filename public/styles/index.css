@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100vh;
 }
 
-body {
+.content {
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,4 +37,31 @@ body {
 .disable {
     pointer-events: none;
     cursor: default;
+}
+
+nav {
+    align-self: normal;
+    justify-self: normal;
+}
+
+#quiz-title {
+    display: flex;
+    align-items: center;
+}
+
+#cog-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+#cog-btn>svg {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
 }

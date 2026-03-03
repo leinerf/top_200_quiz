@@ -1,0 +1,62 @@
+<%- include("components/header.ejs") %>
+    <div class="content">
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 border-bottom">Top 200 Drugs Quiz</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                <div class="feature col">
+                    <h3 class="fs-2 text-body-emphasis">Brands Quiz</h3>
+                    <p>
+                        Take this quiz to test your knowledge on drug brands!
+                    </p>
+                    <a href="/brands" class="icon-link">Brands</a>
+                </div>
+                <div class="feature col">
+                    <h3 class="fs-2 text-body-emphasis">Generics Quiz</h3>
+                    <p>
+                        Take this quiz to test your knowledge on drug generics!
+                    </p>
+                    <a href="/generics" class="icon-link">Generics</a>
+                </div>
+                <div class="feature col">
+                    <h3 class="fs-2 text-body-emphasis">Classifications Quiz</h3>
+                    <p>
+                        Take this quiz to test your knowledge on drug classifications!
+                    </p>
+                    <a href="/classifications" class="icon-link">Classifications</a>
+                </div>
+                <div class="feature col">
+                    <h3 class="fs-2 text-body-emphasis">Usage Quiz</h3>
+                    <p>
+                        Take this quiz to test your knowledge on drug usage!
+                    </p>
+                    <a href="/usage" class="icon-link">Usage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">Top 200 Drugs</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+            <% drugs.forEach(drug => { %>
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                            <%= drug.brand %>
+                        </h3>
+                        <ul>
+                            <li>Generic -
+                                <%= drug.generic %>
+                            </li>
+                            <li>Classification -
+                                <%=drug.classification%>
+                            </li>
+                            <li>Usage -
+                                <%= drug.indication %>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <% });%>
+        </div>
+    </div>
+    <%- include("components/footer.ejs") %>
