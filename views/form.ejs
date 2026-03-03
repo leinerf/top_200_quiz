@@ -63,7 +63,7 @@
             <div class="quiz-header">
                 <div id="quiz-title">
                     <h2>Top 200 Drug
-                        <%= type %> Quiz
+                        <span class="drug-type"><%= type %></span> Quiz
 
                     </h2>
                     <button id="cog-btn" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -78,7 +78,7 @@
 
             <div id="quiz">
                 <div class="quiz-question">
-                    <p id="question">Guess the <span id="drug-type"> <%= type %></span> for <span id="drug"></span></p>
+                    <p id="question">Guess the <span class="drug-type"> <%= type %></span> for <span id="drug"></span></p>
                 </div>
                 <div class="hide" id="correct-answer"></div>
                 <div id="options" class="list-group">
