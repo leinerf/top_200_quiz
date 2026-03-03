@@ -10,6 +10,7 @@ class Drugs {
         for (let i = 1; i < lines.length; i++) {
             const line = lines[i].split(";");
             this.drugs.push({
+                "id": i,
                 "brand": line[0],
                 "generic": line[1],
                 "classification": line[2],
@@ -17,26 +18,34 @@ class Drugs {
             });
         }
     }
+    getDrugs() {
+        return this.drugs;
+    }
+    getTotalDrugs() {
+        return this.drugs.length;
+    }
     quizBrands(offset, limit) {
         return this._quiz(offset, limit, "brand", "generic")
     }
-    quizClassifications(offset, limit, drug) {
-
-    }
-
     quizGenerics(offset, limit) {
         return this._quiz(offset, limit, "generic", "brand");
+    }
+    quizClassifications(offset, limit, drug = "brand") {
+        return this._quiz(offset, limit, drug, "classification");
+    }
+    quizIndications(offset, limit, drug = "brand") {
+        return this._quiz(offset, limit, drug, "indication");
     }
     _quiz(offset, limit, drug, attribute) {
         const result = [];
         const drugs = this.drugs.slice(offset, offset + limit);
-        const attributesSet = new Set(drugs.map((drug) => { return drug[attribute] }));
+        const attributesSet = new Set(this.drugs.map((drug) => { return drug[attribute] }));
         const attributes = [...attributesSet];
 
         for (let i = 0; i < drugs.length; i++) {
             const item = {}
-            item.drug = this.drugs[i][drug];
-            item.attribute = this.drugs[i][attribute]
+            item.drug = drugs[i][drug];
+            item.attribute = drugs[i][attribute]
             item.randomAttributes = new Set([item.attribute]);
             while (item.randomAttributes.size < 4) {
                 const randIndex = Math.floor(Math.random() * attributes.length);
@@ -81,7 +90,6 @@ function createGenericDrugQuestions(offset, limit) {
             "generic_choices": genericChoices
         })
     }
-    console.log(result.length)
     shuffle(result);
     return result;
 }
@@ -100,43 +108,6 @@ function shuffle(array) {
         [array[currentIndex], array[randomIndex]] = [
             array[randomIndex], array[currentIndex]
         ];
-    }
-}
-
-function drugQuiz(offset, limit) {
-    const prompt = ps();
-    const questions = createGenericDrugQuestions(offset, limit);
-    let start = 0;
-    let score = 0;
-    const end = questions.length;
-    while (start < end) {
-        const questionType = Math.floor(Math.random() * 2 + 1);
-        const question = questions[start];
-        let answer;
-        let choices;
-        if (questionType === 1) {
-            answer = question.generic
-            choices = question.generic_choices
-            console.log(question.brand)
-            console.log(question.generic_choices)
-        } else {
-            answer = question.brand
-            choices = question.brand_choices
-            console.log(question.generic)
-            console.log(question.brand_choices)
-        }
-        const userInput = parseInt(prompt("What is your answer 1, 2, 3, 4?\n")) - 1
-        const userAnswer = choices[userInput];
-        if (userAnswer === answer) {
-            score++;
-        }
-        console.log(`${score}/${questions.length}`)
-        console.log(`Answer was: ${answer}`);
-        const command = prompt("press [enter] for next question or type exit to stop\n");
-        if (command === "exit") {
-            return;
-        }
-        start++;
     }
 }
 

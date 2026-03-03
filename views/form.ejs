@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>Top 200 Drugs</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="brands" id="brand-tab">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/generics" id="generic-tab">Generic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/classifications" id="classification-tab">Classificaiton</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/usage" id="usage-tab">Usage</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Limit Questions</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <label for="offset" class="form-label">offset</label>
+                            <input type="range" class="form-range" min="0" max="<%= total - 1%>" value="0" id="offset">
+                            <output for="offset" id="offsetRangeValue" aria-hidden="true"></output>
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="limit" class="form-label">limit</label>
+                            <input type="range" class="form-range" min="1" max="<%= total %>" value="200" id="limit">
+                            <output for="limit" id="limitRangeValue" aria-hidden="true"></output>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="range-submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // This is an example script, please modify as needed
+                const rangeOffsetInput = document.getElementById('offset');
+                const rangeOffsetOutput = document.getElementById('offsetRangeValue');
+
+                // Set initial value
+                rangeOffsetOutput.textContent = rangeOffsetInput.value;
+
+                rangeOffsetInput.addEventListener('input', function() {
+                    rangeOffsetOutput.textContent = this.value;
+                });
+
+                const rangeLimitInput = document.getElementById('limit');
+                const rangeLimitOutput = document.getElementById('limitRangeValue');
+
+                // Set initial value
+                rangeLimitOutput.textContent = rangeLimitInput.value;
+
+                rangeLimitInput.addEventListener('input', function() {
+                    rangeLimitOutput.textContent = this.value;
+                });
+
+                const rangeSubmit = document.getElementById("range-submit");
+                rangeSubmit.addEventListener("click", (event) => {
+                    const params = [
+                        "offset=" + rangeOffsetOutput.textContent,
+                        "limit=" + rangeLimitOutput.textContent
+                    ];
+                    window.location.href = "http://" + window.location.host + window.location.pathname + "?" + params.join("&");
+                })
+            </script>
+        </div>
+        <div class="container quiz-container">
+            <div class="quiz-header">
+                <div id="quiz-title">
+                    <h2>Top 200 Drug
+                        <%= type %> Quiz
+
+                    </h2>
+                    <button id="cog-btn" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"></path>
+                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <p>Answer the following questions:</p>
+            </div>
+
+            <div id="quiz">
+                <div class="quiz-question">
+                    <p id="question">Guess the <span id="drug-type"> <%= type %></span> for <span id="drug"></span></p>
+                </div>
+                <div class="hide" id="correct-answer"></div>
+                <div id="options" class="list-group">
+                    <button class="list-group-item list-group-item-action quiz-option">Berlin</button>
+                    <button class="list-group-item list-group-item-action quiz-option">Madrid</button>
+                    <button class="list-group-item list-group-item-action quiz-option">Paris</button>
+                    <button class="list-group-item list-group-item-action quiz-option">Rome</button>
+                </div>
+                <button id="next-button" class="btn btn-primary mt-3">Next Question</button>
+            </div>
+
+            <div id="result" class="result">
+                <p>Your score is: <span id="score">0</span>/<span id="total-drugs"><%= drugs.length %></span></p>
+                <button id="retry-button" class="btn btn-secondary">Retry Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        var drugs = []
+        <% for(let i = 0; i < drugs.length; i++) { %>
+        var item = {}
+        item.drug = '<%= drugs[i].drug %>';
+        item.attribute = '<%= drugs[i].attribute %>';
+        item.randomAttributes = '<%= drugs[i].randomAttributes %>'.split("|")
+        drugs.push(item);
+        <% } %>
+
+        class Game {
+            constructor(items) {
+                this.items = items;
+                this.total = this.items.length;
+
+            }
+            initGame() {
+                this.score = 0;
+                this.index = 0;
+                this.addChoicesEvents();
+                this.addNextBtnEvents();
+                this.addRetryBtnEvents();
+                this.updateQuestion();
+
+            }
+            addChoicesEvents() {
+                this.choices = document.querySelectorAll(".quiz-option");
+                this.choices.forEach((choice, index) => {
+                    choice.addEventListener("click", (event) => {
+                        if (event.target.textContent === this.items[this.index].attribute) {
+                            this.score++;
+                        }
+                        this.choices.forEach((choice) => {
+                            choice.classList.add("disable");
+                        })
+                        document.querySelector("#correct-answer").classList.remove("hide");
+                        document.querySelector("#score").textContent = this.score;
+                    })
+                })
+            }
+            addNextBtnEvents() {
+                this.nextBtn = document.querySelector("#next-button");
+                this.nextBtn.addEventListener("click", (event) => {
+                    this.index++;
+                    this.updateQuestion();
+                })
+
+            }
+            addRetryBtnEvents() {
+                this.retryBtn = document.querySelector("#retry-button");
+                this.retryBtn.addEventListener("click", (event) => {
+                    window.location.reload();
+                })
+            }
+            updateQuestion() {
+                const data = this.items[this.index]
+                this.choices.forEach((choice) => {
+                    choice.classList.remove("disable");
+                })
+                document.querySelector("#correct-answer").classList.add("hide");
+                document.querySelector("#drug").textContent = data.drug;
+                document.querySelector("#correct-answer").textContent = "The correct answer is " + data.attribute;
+                this.choices.forEach((choice, index) => {
+                    choice.textContent = data.randomAttributes[index];
+                });
+            }
+        }
+        var game = new Game(drugs);
+        game.initGame();
+    </script>
+    <script>
+    </script>
+</body>
+
+</html>
