@@ -166,4 +166,8 @@
         var game = new Game(drugs);
         game.initGame();
     </script>
+    <script>
+        const tab = document.querySelector("#<%= tab %>" + "-tab");
+        tab.classList.add("active");
+    </script>
     <%- include("components/footer.ejs") %>

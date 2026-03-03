@@ -6,6 +6,12 @@ const api = axios.create({
     baseURL: (process.env.BASE_URL || "http://localhost:3000") + "/api"
 })
 
+viewRouter.get("/", async(req, res) => {
+    const response = await api.get("/drugs");
+    const drugs = response.data
+    res.render("index.ejs", { drugs });
+})
+
 viewRouter.get("/brands", async(req, res) => {
     const offset = req.query.offset || 0;
     const limit = req.query.limit || 20;
