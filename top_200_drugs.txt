@@ -112,7 +112,7 @@ Medrol;methylprednisolone;Corticosteroid;inflammation
 Mevacor;lovastatin;HMG-CoA reductase inhibitorreductase inhibitor;Hyperlipidemia
 Microns or DiaBeta;glyburide;Sulfonylurea;Type 2 diabetes mellitus
 Mobic;meloxicam;NSAID;Osteoarthritis
-Mortin;ibuprofen;NSAID;Inflammation
+Motrin;ibuprofen;NSAID;Inflammation
 MS Contin;morphine;Opioid analgesic;Analgesic
 Namenda;Memantime hydrochloride;NMDA receptor agonist;Alzheimer’s disease
 Naprosyn;naproxen;NSAID;Inflammation
