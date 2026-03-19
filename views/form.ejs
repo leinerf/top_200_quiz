@@ -61,10 +61,12 @@
         </div>
         <div class="container quiz-container">
             <div class="quiz-header">
+                <div class="alert alert-primary" role="alert" hidden>
+                    You have answered all the questions. Click on Retry Quiz!!
+                </div>
                 <div id="quiz-title">
                     <h2>Top 200 Drug
                         <span class="drug-type"><%= type %></span> Quiz
-
                     </h2>
                     <button id="cog-btn" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
@@ -130,6 +132,9 @@
                         }
                         this.choices.forEach((choice) => {
                             choice.classList.add("disable");
+                            if (choice.textContent === this.items[this.index].attribute) {
+                                choice.classList.add("correct")
+                            }
                         })
                         document.querySelector("#correct-answer").classList.remove("hide");
                         document.querySelector("#score").textContent = this.score;
@@ -140,7 +145,11 @@
                 this.nextBtn = document.querySelector("#next-button");
                 this.nextBtn.addEventListener("click", (event) => {
                     this.index++;
-                    this.updateQuestion();
+                    if (this.index >= this.items.length) {
+                        document.querySelector(".alert").hidden = false;
+                    } else {
+                        this.updateQuestion();
+                    }
                 })
 
             }
@@ -154,6 +163,7 @@
                 const data = this.items[this.index]
                 this.choices.forEach((choice) => {
                     choice.classList.remove("disable");
+                    choice.classList.remove("correct");
                 })
                 document.querySelector("#correct-answer").classList.add("hide");
                 document.querySelector("#drug").textContent = data.drug;
