@@ -123,7 +123,7 @@ Nitrostat;nitroglycerin;Vasodilator;Angina
 Norvasc;Amlodipine besylate;CCB;Hypertension
 Novolog;Insulin aspart;Insulin;Diabetes mellitus
 Nyamyc;nystatin;Antifungal;Fungal infection
-Oraped;prednisolone;Corticosteroid;Inflammatory disorders
+Orapred;prednisolone;Corticosteroid;Inflammatory disorders
 Ortho-Tri-Cyclen Lo;Ethinyl estradiol/norgestimate;Triphasic oral contraceptive;Oral contraceptive
 Oxycontin;oxycodone;Opioid;Analgesic
 Pacerone;Amiodarone hydrochloride;Antiarrhythmic;Antiarrhythmic
