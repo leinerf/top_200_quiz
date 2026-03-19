@@ -69,3 +69,7 @@ nav {
 .drug-type {
     text-transform: capitalize;
 }
+
+.correct {
+    background-color: #88E788 !important;
+}
